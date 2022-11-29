@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+.container {
+display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    border-bottom: 2px solid pink;
+    width: 400px;
+    text-align: center;
+    border-right: 2px solid pink;
+    animation: pulse 3s infinite;
+    box-shadow: 4px 4px 5px #FF4136;
+}
+
+
+div img {
+    width: 450px;
+    height: 300px;
+    margin: 15px;
+    transition: all 1s;
+}
+
+div img:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes pulse {
+    0% {
+        background-color: #001F3F;
+    }
+
+    100% {
+        background-color: #FF4136;
+    }
+}
